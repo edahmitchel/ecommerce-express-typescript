@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import { IShipping } from "../utils/types";
 
 const shippingSchema = new mongoose.Schema({
-    aaddress: { type: String, required: true,},
+    address: { type: String, required: true,},
     orderId:{ref:"Order",
     type:mongoose.Schema.Types.ObjectId
 

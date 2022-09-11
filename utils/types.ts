@@ -15,7 +15,7 @@ export interface IProduct {
     price: number;
     stock: number;
     description: string;
-    collection: string;
+    collections: string;
     sizes?: number
 }
 export interface IOrder {
