@@ -3,11 +3,11 @@ import { IUser } from "../utils/types";
 
 const userSchema = new mongoose.Schema(
     {
-        name:{type:String,reqired:true},
-        email:{type:String,reqired:true,unique:true},
-        password:{type:String,reqired:true},
-        phone:{type:Number,reqired:true, unique:true},
-        isAdmin:{type:Boolean,defaule:false, reqired:true}
+        name:{type:String,required:true},
+        email:{type:String,required:true,unique:true},
+        password:{type:String,required:true},
+        phone:{type:Number,required:true, unique:true},
+        isAdmin:{type:Boolean,default:false, required:true}
     },{
         timestamps:true
     }
